@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(27, 27, 27, 0.95);
+  color: white;
+  overflow-x: hidden;
+}
+
+#main_container header {
+  text-align: center;
+  background: rgba(196, 196, 196, 0.05);
+}
+
+header p {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 30px;
+}
+
+.team-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #3f3f3f;
+  margin-left: 20px;
+  border-radius: 20px 0 0 20px;
+}
+
+.team-section .title p {
+  margin-left: 24px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.team-section .team-box {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.team-section .team-box .team-model {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.team-section .team-box .team-model a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.player-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5px;
+}
+
+.player-section .title p {
+  margin-left: 44px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.player-section .player-box {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.player-section .player-box .player-model {
+  width: 136px;
+  height: 200px;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border: 1px white solid;
+  border-radius: 10px;
+}
+
+.player-section .player-box .player-model img {
+  max-width: 136px;
+  min-height: 160px;
+  border-radius: 10px 10px 0 0;
+}
+
+.player-section .player-box .player-model .name {
+  height: 40px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.player-section .player-box .player-model .name p {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.player-section .player-box .player-model-vm {
+  border-radius: 0;
+  border: none;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.player-section .player-box .player-model-vm a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.news-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 80px;
+}
+
+.news-section .title p {
+  margin-left: 44px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.news-section .news-box {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: scroll;
+}
+
+.news-section .news-box .news-model {
+  min-width: 330px;
+  height: 280px;
+  border: 1px white solid;
+  margin: 0 10px;
+  border-radius: 10px;
+  background: white;
+}
+
+.news-section .news-box .news-model img {
+  min-width: 330px;
+  max-height: 200px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.news-section .news-box .news-model .name {
+  text-align: center;
+  color: black;
+}
+
+.news-section .news-box .news-model .name p {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.news-section .news-box .news-model-vm {
+  text-align: center;
+  margin-left: 5px;
+}
+
+.news-section .news-box .news-model-vm a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.player-section .player-box::-webkit-scrollbar, .news-section .news-box::-webkit-scrollbar, .team-section .team-box::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 0px;
+}
+
+.navigation-box {
+  width: 100%;
+  height: 67px;
+  position: fixed;
+  bottom: 0;
+  background: #3F3F3F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation-box .nav-box {
+  padding: 0 10px;
+  margin: 0 20px;
+  width: 40px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.navigation-box .nav-box a {
+  text-decoration: none;
+}
+
+.navigation-box .nav-box a i {
+  color: white;
+  font-size: 35px;
+}
+/*# sourceMappingURL=main.css.map */
