@@ -103,12 +103,12 @@ header p{
     flex-direction: column;
     text-align: center;
     border: 1px white solid;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .player-section .player-box .player-model img{
     max-width: 100px;
     min-height: 135px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-position: center;
 }
 .player-section .player-box .player-model .name{
@@ -121,7 +121,7 @@ header p{
     align-items: center;
     color: rgb(0, 0, 0);
     justify-content: center;
-    border-radius: 0 0 10px 10px ;
+    border-radius: 0 0 5px 5px ;
 }
 .player-section .player-box .player-model .name p{
     margin: 0;
@@ -228,7 +228,7 @@ header p{
 .navigation-box .nav-box{
     padding: 0 10px;
     margin: 0 20px;
-    width: 50px;
+    width: 43px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -237,7 +237,7 @@ header p{
 }
 .navigation-box .active{
     background: rgba($color: white, $alpha: 0.2);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .navigation-box .nav-box img{
     max-width: 25px;
