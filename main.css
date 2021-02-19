@@ -230,7 +230,7 @@ header p {
 .news-section .news-box .news-model {
   position: relative;
   min-width: 300px;
-  height: 150px;
+  height: 160px;
   border: 1px white solid;
   margin: 0 10px;
   border-radius: 5px;
@@ -238,7 +238,7 @@ header p {
 
 .news-section .news-box .news-model img {
   min-width: 299px;
-  max-height: 149px;
+  max-height: 160px;
   border-radius: 5px;
   background-position: center;
 }
