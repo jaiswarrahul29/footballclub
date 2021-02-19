@@ -189,7 +189,6 @@ header p{
     height: 50px;
     bottom: 0px;
     background: rgba($color: white, $alpha: 0.8);
-    z-index: 1;
     text-align: center;
     color: black;
     border-radius: 0 0 5px 5px;
@@ -224,6 +223,7 @@ header p{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 .navigation-box .nav-box{
     padding: 0 10px;
