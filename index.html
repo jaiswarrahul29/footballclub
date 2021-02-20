@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>football_club</title>
 </head>
@@ -121,21 +120,21 @@
                 </div>
                 <!-- player-cards -->
                 <div class="player-model" onclick="document.location='#'">
-                    <img src="./image/Cristiano Ronaldo.jpg" alt="image">
+                    <img src="./image/Eden Hazard.jpg" alt="image">
                     <div class="name">
                         <p>Cristiano Ronaldo</p>
                     </div>
                 </div>
                 <!-- player-cards -->
                 <div class="player-model" onclick="document.location='#'">
-                    <img src="./image/Cristiano Ronaldo.jpg" alt="image">
+                    <img src="./image/Neymar.jpg" alt="image">
                     <div class="name">
                         <p>Cristiano Ronaldo</p>
                     </div>
                 </div>
                 <!-- player-cards -->
                 <div class="player-model" onclick="document.location='#'">
-                    <img src="./image/messi.jpg" alt="image">
+                    <img src="./image/Robert Lewandowski.jpg" alt="image">
                     <div class="name">
                         <p>Messi</p>
                     </div>
@@ -176,27 +175,27 @@
                 </div>
 
                 <div class="news-model" onclick="document.location='#'">
+                    <img src="./image/images.jpg" alt="news">
+                    <div class="name">
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
+                            nam!.</p>
+                    </div>
+                </div>
+
+                <div class="news-model" onclick="document.location='#'">
+                    <img src="./image/2257621-1094443036.jpg" alt="news">
+                    <div class="name">
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
+                            nam!.</p>
+                    </div>
+                </div>
+
+                <div class="news-model" onclick="document.location='#'">
                     <img src="./image/news.jpg" alt="news">
                     <div class="name">
-                        <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet 
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet
                             consectetur adipisicing elit. Facere,
-                        nam!. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-
-                <div class="news-model" onclick="document.location='#'">
-                    <img src="./image/news.jpg" alt="news">
-                    <div class="name">
-                        <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
-                            nam!.</p>
-                    </div>
-                </div>
-
-                <div class="news-model" onclick="document.location='#'">
-                    <img src="./image/news.jpg" alt="news">
-                    <div class="name">
-                        <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
-                            nam!.</p>
+                            nam!. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
 
@@ -213,22 +212,34 @@
         <!-- navigation -->
         <div class="navigation-box">
 
-            <div class="nav-box active" onclick="document.location='#'">
-                <img src="./image/Home.png" alt="">
+            <div class="nav-box active" onclick="document.location='index.html'">
+                <img src="./image/Home.png" alt="Home">
+            </div>
+
+            <div class="nav-box" onclick="document.location='search/search.html'">
+               <img src="./image/Search.png" alt="search">
             </div>
 
             <div class="nav-box" onclick="document.location='#'">
-               <img src="./image/Search.png" alt="">
-            </div>
-
-            <div class="nav-box" onclick="document.location='#'">
-                <img src="./image/menu.png" alt="">
+                <img src="./image/menu.png" alt="menu">
             </div>
 
         </div>
 
-
     </div>
+    
+    <!-- loading -->
+    <div class="loader-wrapper" id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <!-- loading script -->
+    <script>
+        window.addEventListener("load", function(){
+            document.getElementById("loader-wrapper").style.display="none";
+        })
+    </script>
+
+    <script src="./javascript/index.js"></script>
 </body>
 
 </html>

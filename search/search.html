@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>search</title>
+</head>
+<body>
+    <!-- search-wrapping -->
+
+    <div class="search-wrap">
+        <div class="search-box">
+            <div class="input">
+                <input type="text" placeholder="Type to search..">
+            </div>
+            <div class="result">
+                <li><a href="#">hello</a></li>
+                <li><a href="#">hello world</a></li>
+                <li><a href="#">hello newyork</a></li>
+                <li><a href="#">hello india</a></li>
+                <li><a href="#">hello mumbai</a></li>
+            </div>
+            <div class="searchicon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- navigation -->
+    <div class="navigation-box">
+    
+        <div class="nav-box" onclick="document.location='../index.html'">
+            <img src="../image/Home.png" alt="Home">
+        </div>
+    
+        <div class="nav-box active" onclick="document.location='search.html'">
+            <img src="../image/Search.png" alt="search">
+        </div>
+    
+        <div class="nav-box" onclick="document.location='../menu/menu.html'">
+            <img src="../image/menu.png" alt="menu">
+        </div>
+    
+    </div>
+
+    <!-- loading -->
+    <div class="loader-wrapper" id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <!-- loading script -->
+    <script>
+        window.addEventListener("load", function () {
+            document.getElementById("loader-wrapper").style.display = "none";
+        })
+    </script>
+</body>
+</html>

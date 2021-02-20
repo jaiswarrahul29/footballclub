@@ -43,9 +43,8 @@ header p {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #3f3f3f;
-  margin-left: 20px;
-  margin-top: 20px;
-  border-radius: 20px 0 0 20px;
+  margin-top: 15px;
+  border-radius: 5px;
 }
 
 .team-section .title p {
@@ -110,7 +109,7 @@ header p {
 }
 
 .player-section .title p {
-  margin-left: 44px;
+  margin-left: 24px;
   margin-top: 10px;
   font-size: 15px;
   font-family: sans-serif;
@@ -159,7 +158,7 @@ header p {
 
 .player-section .player-box .player-model .name {
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
   width: 100px;
   height: 30px;
   background: rgba(255, 255, 255, 0.8);
@@ -205,7 +204,7 @@ header p {
 }
 
 .news-section .title p {
-  margin-left: 44px;
+  margin-left: 24px;
   margin-bottom: 10px;
   font-size: 15px;
   font-family: sans-serif;
@@ -253,7 +252,7 @@ header p {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
-  bottom: 0px;
+  bottom: -1px;
   background: rgba(255, 255, 255, 0.8);
   text-align: center;
   color: black;
@@ -302,7 +301,7 @@ header p {
 .navigation-box .nav-box {
   padding: 0 10px;
   margin: 0 20px;
-  width: 43px;
+  width: 40px;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,7 +320,126 @@ header p {
 }
 
 .navigation-box .nav-box img {
-  max-width: 25px;
-  min-height: 25px;
+  max-width: 20px;
+  min-height: 20px;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(63, 63, 63, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  -webkit-animation: loader 2s infinite ease;
+          animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  -webkit-animation: loader-inner 2s infinite ease-in;
+          animation: loader-inner 2s infinite ease-in;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
