@@ -14,7 +14,7 @@ body {
 .news-wrap {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,7 +22,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
   overflow-y: hidden;
 }
 
@@ -32,47 +35,9 @@ body {
   font-size: 15px;
 }
 
-.news-wrap .news-box {
-  width: 100%;
-  height: 520px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow-x: scroll;
-}
-
-.news-wrap .news-box .news-model {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  margin: 10px 10px;
-  background: #3F3F3F;
-  border-radius: 5px;
-}
-
-.news-wrap .news-box .news-model .news-image {
-  width: 100%;
-  height: 200px;
-  border-radius: 5px;
-}
-
-.news-wrap .news-box .news-model .news-image img {
-  min-width: 100%;
-  max-height: 200px;
-  border-radius: 5px 5px 0 0;
-}
-
 .navigation-box {
   width: 100%;
-  height: 50px;
+  height: 8%;
   position: fixed;
   bottom: 0;
   background: #3F3F3F;
@@ -265,5 +230,9 @@ body {
   text-align: left;
   font-size: 14px;
   font-weight: 200;
+}
+
+.flickity-prev-next-button, .flickity-prev-next-button {
+  display: none;
 }
 /*# sourceMappingURL=news.css.map */
