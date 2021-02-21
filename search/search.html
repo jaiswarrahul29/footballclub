@@ -13,23 +13,44 @@
 
     <div class="search-wrap">
         <div class="search-box">
+
             <div class="input">
-                <input type="text" placeholder="Type to search..">
+                <input type="text" id="input" placeholder="Type to search.." onkeyup="searchresult()">
+                <div class="searchicon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z" />
+                    </svg>
+                </div>
             </div>
-            <div class="result">
-                <li><a href="#">hello</a></li>
-                <li><a href="#">hello world</a></li>
-                <li><a href="#">hello newyork</a></li>
-                <li><a href="#">hello india</a></li>
-                <li><a href="#">hello mumbai</a></li>
-            </div>
-            <div class="searchicon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path
-                        d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z" />
-                </svg>
-            </div>
+
+        </div>
+    </div>
+
+    <div class="result-box">
+    
+        <div class="result" id="result">
+            <li><a href="#">Landon Donovan</a></li>
+            <li><a href="#">Mia Hamm</a></li>
+            <li><a href="#">Abby Wambach</a></li>
+            <li><a href="#">Ronaldo</a></li>
+            <li><a href="#">Sócrates</a></li>
+            <li><a href="#">Landon Donovan</a></li>
+            <li><a href="#">Mia Hamm</a></li>
+            <li><a href="#">Abby Wambach</a></li>
+            <li><a href="#">Ronaldo</a></li>
+            <li><a href="#">Sócrates</a></li>
+            <li><a href="#">Landon Donovan</a></li>
+            <li><a href="#">Mia Hamm</a></li>
+            <li><a href="#">Abby Wambach</a></li>
+            <li><a href="#">Ronaldo</a></li>
+            <li><a href="#">Sócrates</a></li>
+            <li><a href="#">Landon Donovan</a></li>
+            <li><a href="#">Mia Hamm</a></li>
+            <li><a href="#">Abby Wambach</a></li>
+            <li><a href="#">Ronaldo</a></li>
+            <li><a href="#">Sócrates</a></li>
         </div>
     </div>
 
@@ -60,6 +81,31 @@
         window.addEventListener("load", function () {
             document.getElementById("loader-wrapper").style.display = "none";
         })
+    </script>
+    <!-- search script -->
+    <script>
+        const searchresult = () => {
+            let input = document.getElementById('input');
+            let filter = input.value.toUpperCase();
+            let result = document.getElementById('result');
+
+            let li = result.getElementsByTagName('li');
+
+            for(var i=0 ; i<li.length ; i++){
+                let a = li[i].getElementsByTagName('a')[0];
+
+                let textvalue = a.textContent;
+
+                if(textvalue.toUpperCase().indexOf(filter) > -1){
+                    li[i].style.display='';
+                    
+                }
+                else{
+                    li[i].style.display = 'none';
+                    
+                }
+            }
+        }
     </script>
 </body>
 
