@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +6,25 @@
 }
 
 body {
-  background: rgba(27, 27, 27, 0.95);
   color: white;
-  overflow-y: hidden;
+  background-color: rgba(27, 27, 27, 0.95);
 }
 
-.news-wrap {
-  position: relative;
+.container {
   width: 100%;
-  height: 85%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.container .title {
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.container .image-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,66 +32,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 10px;
-  overflow-y: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.news-wrap .title {
-  padding: 0px 24px;
-  font-family: sans-serif;
+.container .image-box img, h2, p {
+  padding: 2%;
+}
+
+.container .image-box h2 {
   font-size: 15px;
-}
-
-.gallery {
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.gallery-cell {
-  width: 64%;
-  height: 400px;
-  margin-right: 10px;
-  background: #3F3F3F;
-  counter-increment: gallery-cell;
-  border-radius: 5px;
-}
-
-.gallery-cell img {
-  width: 100%;
-  min-height: 160px;
-  max-height: 160px;
-  border-radius: 5px 5px 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media screen and (min-width: 700px) {
-  .gallery-cell img {
-    min-height: 160px;
-    max-height: 250px;
-  }
-}
-
-.gallery-cell p {
-  width: 100%;
-  padding: 10px;
-  text-align: left;
-  font-size: 11.5px;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-  color: silver;
-}
-
-.flickity-prev-next-button, .flickity-prev-next-button {
-  display: none;
+  font-family: sans-serif;
 }
 
 .navigation-box {
   width: 100%;
-  height: 8%;
+  height: 50px;
   position: fixed;
   bottom: 0;
   background: #3F3F3F;
@@ -246,4 +212,4 @@ body {
     height: 0%;
   }
 }
-/*# sourceMappingURL=news.css.map */
+/*# sourceMappingURL=bayern.css.map */

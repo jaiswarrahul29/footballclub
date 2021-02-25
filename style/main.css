@@ -12,27 +12,8 @@ body {
   overflow-x: hidden;
 }
 
-#main_container header {
-  height: 40px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: rgba(196, 196, 196, 0.05);
-}
-
-header p {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 20px;
-}
-
 .team-section {
+  width: auto;
   padding: 0;
   height: 130px;
   display: -webkit-box;
@@ -47,6 +28,22 @@ header p {
   border-radius: 5px;
 }
 
+.team-section .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .team-section .title p {
   margin-left: 24px;
   margin-top: 10px;
@@ -55,7 +52,15 @@ header p {
   font-family: sans-serif;
 }
 
+#title-vm {
+  font-size: 10px;
+  color: #b6b6b6;
+  padding: 5px;
+  margin-right: 14px;
+}
+
 .team-section .team-box {
+  width: auto;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +102,7 @@ header p {
 }
 
 .player-section {
+  width: auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,14 +114,31 @@ header p {
   margin-top: 5px;
 }
 
+.player-section .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
 .player-section .title p {
   margin-left: 24px;
-  margin-top: 10px;
   font-size: 15px;
   font-family: sans-serif;
 }
 
 .player-section .player-box {
+  width: auto;
   position: relative;
   height: 180px;
   display: -webkit-box;
@@ -192,6 +215,7 @@ header p {
 }
 
 .news-section {
+  width: auto;
   height: 210px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,6 +227,23 @@ header p {
   margin-bottom: 50px;
 }
 
+.news-section .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
 .news-section .title p {
   margin-left: 24px;
   margin-bottom: 10px;
@@ -211,6 +252,7 @@ header p {
 }
 
 .news-section .news-box {
+  width: auto;
   position: relative;
   height: 220px;
   display: -webkit-box;

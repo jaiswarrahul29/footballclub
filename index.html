@@ -11,84 +11,54 @@
 <body>
 
     <div id="main_container">
-
-        <!-- HEADING-SECTION -->
-        <!-- <header>
-            <p>FOOTBALL CLUB</p>
-        </header> -->
-
         <!-- TEAM VIEW -->
         <div class="team-section">
 
             <div class="title">
-                <p>Team</p>
+                <p>Leagues</p>
+                <p id="title-vm" onclick="document.location='./teams/team.html'"> View More</p>
             </div>
 
             <div class="team-box">
 
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Lorem, ipsum.</p>
-                </div>
-
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
-                </div>
-
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
-                </div>
-
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
-                </div>
-                
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
-                </div>
-                
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
-                </div>
-
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
-                </div>
-                
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
-                </div>
-                
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
-                </div>
-
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
-                </div>
-                
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
-                </div>
-                
-                <div class="team-model" onclick="document.location='#'">
-                    <img src="./image/team-grp.png" alt="logo">
-                    <p>Team name</p>
+                <div class="team-model" onclick="document.location='./teams/team.html'">
+                    <img src="./image/league-logo/france-league-logo-c.png" alt="logo">
+                    <p>France</p>
                 </div>
 
                 <div class="team-model" onclick="document.location='./teams/team.html'">
-                    <img src="./image/Arrow-Right-Circle.png" alt="logo">
-                    <p>View More</p>
+                    <img src="./image/league-logo/germany-logo-c.png" alt="logo">
+                    <p>Germany</p>
+                </div>
+
+                <div class="team-model" onclick="document.location='./teams/team.html'">
+                    <img src="./image/league-logo/Indian-Super-League-Logo-c.png" alt="logo">
+                    <p>Indian</p>
+                </div>
+
+                <div class="team-model" onclick="document.location='./teams/team.html'">
+                    <img src="./image/league-logo/italy-league-logo-c.png" alt="logo">
+                    <p>Italy</p>
+                </div>
+
+                <div class="team-model" onclick="document.location='./teams/team.html'">
+                    <img src="./image/league-logo/La-Liga-Logo-c.png" alt="logo">
+                    <p>Spain</p>
+                </div>
+
+                <div class="team-model" onclick="document.location='./teams/team.html'">
+                    <img src="./image/league-logo/Premier-League-PNG-Image-c.png" alt="logo">
+                    <p>England</p>
+                </div>
+
+                <div class="team-model" onclick="document.location='./teams/team.html'">
+                    <img src="./image/league-logo/uefa-campions-league-c.png" alt="logo">
+                    <p>Campions</p>
+                </div>
+
+                <div class="team-model" onclick="document.location='./teams/team.html'">
+                    <img src="./image/league-logo/uefa-league-c.png" alt="logo">
+                    <p>Europa</p>
                 </div>
 
             </div>
@@ -100,17 +70,19 @@
 
             <div class="title">
                 <p>Player</p>
+                <p id="title-vm" onclick="document.location='./players/player.html'"> View More</p>
             </div>
 
             <div class="player-box">
                 <!-- player-cards -->
-                <div class="player-model" onclick="document.location='#'">
+                <div class="player-model"
+                    onclick="document.location='./players/player-list/demo-player/demo-player.html'">
                     <img src="./image/messi.jpg" alt="image">
                     <div class="name">
                         <p>Messi</p>
                     </div>
                 </div>
-                
+
                 <!-- player-cards -->
                 <div class="player-model" onclick="document.location='#'">
                     <img src="./image/Cristiano Ronaldo.jpg" alt="image">
@@ -146,12 +118,6 @@
                         <p>Messi</p>
                     </div>
                 </div>
-                <!-- player-cards -->
-                <div class="player-model-vm" onclick="document.location='./players/player.html'">
-                    <img src="./image/Arrow-Right-Circle.png" alt="image">
-                    <p>View More</p>
-                </div>
-
             </div>
 
         </div>
@@ -162,11 +128,11 @@
 
             <div class="title">
                 <p>Latest News</p>
+                <p id="title-vm" onclick="document.location='./news/news.html'"> View More</p>
             </div>
 
             <div class="news-box">
-
-                <div class="news-model" onclick="document.location='#'">
+                <div class="news-model" onclick="document.location='./news/news.html'">
                     <img src="./image/news.png" alt="news">
                     <div class="name">
                         <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
@@ -198,14 +164,6 @@
                             nam!. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-
-                <div class="news-model-vm" onclick="document.location='./news/news.html'">
-                    <img src="./image/Arrow-Right-Circle.png" alt="news">
-                    <div class="name">
-                        <p>View More</p>
-                    </div>
-                </div>
-
             </div>
         </div>
 
@@ -217,7 +175,7 @@
             </div>
 
             <div class="nav-box" onclick="document.location='search/search.html'">
-               <img src="./image/Search.png" alt="search">
+                <img src="./image/Search.png" alt="search">
             </div>
 
             <div class="nav-box" onclick="document.location='menu/menu.html'">
@@ -227,15 +185,15 @@
         </div>
 
     </div>
-    
+
     <!-- loading -->
     <div class="loader-wrapper" id="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <!-- loading script -->
     <script>
-        window.addEventListener("load", function(){
-            document.getElementById("loader-wrapper").style.display="none";
+        window.addEventListener("load", function () {
+            document.getElementById("loader-wrapper").style.display = "none";
         })
     </script>
 
