@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 .player-wrap {
   position: relative;
   width: 100%;

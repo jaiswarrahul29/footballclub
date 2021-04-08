@@ -9,6 +9,9 @@ body{
     color: white;
     overflow-x: hidden;
 }
+html,body{
+    scroll-behavior: smooth;
+}
 //player-wrap here
 .player-wrap{
     position: relative;

@@ -54,6 +54,7 @@ body {
   height: 100%;
   overflow: scroll;
   scroll-behavior: smooth;
+  color: black;
 }
 
 .result-box .result li {
